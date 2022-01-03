@@ -1,0 +1,24 @@
+#Bash Programming 
+
+To Define folder name on which we are working 
+#! /usr/bin/bash
+
+1) User Input:
+
+read "username: " username
+then input taken on next line
+
+read -p "username: " username
+then input taken on same line
+
+while taking password to hide password We take -sp
+eg. read -sp "password: " password
+
+2) Array Input:
+
+to get array we use -a flag
+read -a names
+echo "${names[0]}, ${names[1]}"
+
+after read command if we dont mention any variable name then terminal have 
+default variable "REPLY".
